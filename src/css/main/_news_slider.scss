@@ -1,4 +1,4 @@
-.items-slider{
+.news-slider{
   position: relative;
   display: flex;
   width: 100%;
@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 70px 0 90px;
+  margin: 110px 0;
 
   &__head{
     position: relative;
@@ -15,37 +15,16 @@
     align-items: center;
     justify-content: space-between;
   }
-  &__tabs{
-    position: relative;
-    display: flex;
-    width: 25%;
-    align-items: center;
-  }
-  &__tab{
+  &__title{
     text-transform: uppercase;
     font-family: "Gotham-Pro";
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 900;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: normal;
-    color: rgba(39, 39, 39, 0.6);
-    padding: 15px 40px;
-    background-color: #ffffff;
-    transition: color .2s, background-color .2s;
-    border: 0 none;
-    cursor: pointer;
-    &.active{
-      transition: color .2s, background-color .2s;
-      background-color: $orange;
-      color: #f2f2f2;
-    }
-    &:hover{
-      transition: color .2s, background-color .2s;
-      background-color: $orange;
-      color: #f2f2f2;
-    }
+    letter-spacing: 1.92px;
+    color: #000000;
   }
   &__nav{
     position: absolute;
@@ -206,14 +185,11 @@
   }
   &__slider{
     position: relative;
-    display: none;
+    display: flex;
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
     height: auto;
-    &.active{
-      display: flex;
-    }
   }
   &__slide{
     position: relative;

@@ -112,6 +112,17 @@ $(document).ready(function () {
         zIndex: 300,
         asNavFor: '.items-slider__nav-slider',
     });
+    $('#items_slider_news').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        draggable:false,
+        accessibility: false,
+        variableWidth: true,
+        zIndex: 300,
+        asNavFor: '.items-slider__nav-slider',
+    });
 
     //Иниц. slider__nav слайдера товаров
     $('.items-slider__nav-slider').slick({
@@ -120,7 +131,7 @@ $(document).ready(function () {
         arrows:true,
         dots:false,
         fade: true,
-        asNavFor: '#items_slider_hits',
+        asNavFor: '#items_slider_hits, #items_slider_news',
         prevArrow: '<button type="button" class="slick-prev"><span class="line"></span></button>',
         nextArrow: '<button type="button" class="slick-next"><span class="line"></span></button>',
         zIndex: 300,
@@ -134,7 +145,42 @@ $(document).ready(function () {
             $('.items-slider__nav-complete').width(progress*10 + '%');
 
         });
+});
 
+$(document).ready(function () {
+    //Иниц. слайдера товаров , управление slider__nav
+    $('.news-slider__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        draggable:false,
+        accessibility: false,
+        variableWidth: true,
+        zIndex: 300,
+        asNavFor: '.news-slider__nav-slider',
+    });
+    //Иниц. slider__nav слайдера товаров
+    $('.news-slider__nav-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:true,
+        dots:false,
+        fade: true,
+        asNavFor: '.news-slider__slider',
+        prevArrow: '<button type="button" class="slick-prev"><span class="line"></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span class="line"></span></button>',
+        zIndex: 300,
+
+    });
+
+    //Заполнение прогресс бара на слайдере товаров
+    $('.news-slider .slick-arrow').click(
+        function () {
+            let progress = $(".news-slider__nav-number.slick-active").attr('data-progress');
+            $('.news-slider__nav-complete').width(progress*10 + '%');
+
+        });
 });
 
 // $(document).ready(function () {
