@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="src/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="src/app/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="src/app/slick/slick.css">
+    <!--<link rel="stylesheet" type="text/css" href="src/app/slick/slick-theme.css">-->
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <link rel="stylesheet" type="text/css" href="src/css/media.css">
     <link rel="icon" href="src/img/logo/logo.svg" sizes="16x16">
@@ -64,7 +66,67 @@
 </header>
 <main class="main">
     <section class="vertical-slider">
-
+        <div class="vertical-slider__left-block">
+            <div class="vertical-slider__text-slider">
+                <div class="vertical-slider__text-slide">
+                    <h2 class="vertical-slider__title">рюкзаки для городских улиц</h2>
+                    <span class="vertical-slider__subtitle">street</span>
+                    <p class="vertical-slider__txt">
+                        Молодежные и школьные рюкзаки, всегда крутые и модные,
+                        вместительные и практичные. С ними легко и весело на прогулке,
+                        в путешествиях и даже школе.
+                    </p>
+                    <a href="#" class="button">все товары</a>
+                </div>
+                <div class="vertical-slider__text-slide">
+                    <h2 class="vertical-slider__title">Lorem ipsum dolor sit.</h2>
+                    <span class="vertical-slider__subtitle">street</span>
+                    <p class="vertical-slider__txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Blanditiis consectetur non possimus quisquam reprehenderit voluptate.
+                    </p>
+                    <a href="#" class="button">все товары</a>
+                </div>
+                <div class="vertical-slider__text-slide">
+                    <h2 class="vertical-slider__title">Lorem ipsum dolor sit amet, consectetur.</h2>
+                    <span class="vertical-slider__subtitle">street</span>
+                    <p class="vertical-slider__txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Amet dolore doloremque harum impedit perferendis temporibus ut!
+                        Asperiores dolor magnam nam quae quo vel vitae? Deserunt.
+                    </p>
+                    <a href="#" class="button">все товары</a>
+                </div>
+            </div>
+            <div class="vertical-slider__nav-box">
+                <div class="vertical-slider__nav-slider">
+                    <span class="vertical-slider__nav-number">1</span>
+                    <span class="vertical-slider__nav-number">2</span>
+                    <span class="vertical-slider__nav-number">3</span>
+                </div>
+                <span>/ 3</span>
+            </div>
+            <div class="vertical-slider__social">
+                <i class="splash"></i>
+                <a href="" class="vertical-slider__social-button"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="vertical-slider__social-button"><i class="fab fa-youtube"></i></a>
+                <a href="" class="vertical-slider__social-button"><i class="fab fa-instagram"></i></a>
+                <a href="" class="vertical-slider__social-button"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+        <div class="vertical-slider__img-box">
+            <div class="vertical-slider__img-slide">
+                <img src="src/img/selected/557921-6.jpg" alt="">
+            </div>
+            <div class="vertical-slider__img-slide">
+                <img src="src/img/selected/557918-6.jpg" alt="">
+            </div>
+            <div class="vertical-slider__img-slide">
+                <img src="src/img/selected/557582-6 2.jpg" alt="">
+            </div>
+        </div>
+        <div class="vertical-slider__social-background">
+        </div>
     </section>
     <section class="main__category">
         <h2 class="category__title">твой yes стиль</h2>
@@ -108,21 +170,286 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="items-slider">
+        <div class="items-slider__head">
+            <div class="items-slider__tabs">
+                <button id="items_slider_hits_button" class="items-slider__tab active">Хиты продаж</button>
+                <button id="items_slider_news_button" class="items-slider__tab">Новинки</button>
+            </div>
+            <div class="items-slider__nav">
+                <div class="items-slider__nav-wrap">
+                    <div class="items-slider__nav-slider">
+                        <span class="items-slider__nav-number" data-progress="1">1</span>
+                        <span class="items-slider__nav-number" data-progress="2">2</span>
+                        <span class="items-slider__nav-number" data-progress="3">3</span>
+                        <span class="items-slider__nav-number" data-progress="4">4</span>
+                        <span class="items-slider__nav-number" data-progress="5">5</span>
+                        <span class="items-slider__nav-number" data-progress="6">6</span>
+                        <span class="items-slider__nav-number" data-progress="7">7</span>
+                        <span class="items-slider__nav-number" data-progress="8">8</span>
+                        <span class="items-slider__nav-number" data-progress="9">9</span>
+                        <span class="items-slider__nav-number" data-progress="10">10</span>
+                    </div>
+                    <span>/ 10</span>
+                </div>
+                <div class="items-slider__nav-progress">
+                    <div class="items-slider__nav-complete"></div>
+                </div>
+            </div>
+        </div>
+        <div id="items_slider_hits" class="items-slider__slider active">
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1201</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1202</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1203</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1204</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1205</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1206</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1207</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1208</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1209</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+            <div class="items-slider__slide">
+                <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                <span class="items-slider__slide-article">Артикул: 38276482</span>
+                <span class="items-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                <span class="items-slider__slide-price"><b>1210</b> грн</span>
+                <div class="items-slider__slide-links">
+                    <a href="" class="items-slider__slide-link">где купить?</a>
+                    <a href="" class="items-slider__slide-link">подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div id="items_slider_news" class="items-slider__slider">
+            <div class="items-slider__slide">
 
+            </div>
+            <div class="items-slider__slide">
+
+            </div>
+            <div class="items-slider__slide">
+
+            </div>
+            <div class="items-slider__slide">
+
+            </div>
+            <div class="items-slider__slide">
+
+            </div>
+            <div class="items-slider__slide">
+
+            </div>
+            <div class="items-slider__slide">
+
+            </div>
+            <div class="items-slider__slide">
+
+            </div>
+        </div>
     </section>
-    <section>
-
+    <section class="main__social">
+        <div class="social__wrap">
+            <div class="social__desc">
+                <h2 class="social__title">Мы в социальных сетях</h2>
+                <span class="social__subtitle">подпишись и будь в курсе последних новинок и новостей</span>
+                <div class="social__links">
+                    <a href="#" class="social__button"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social__button"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social__button"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social__button"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+            <div class="social__img">
+                <img src="src/img/selected/M&G.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="main__about_us">
+        <div class="about_us__wrap">
+            <div class="about_us__img-block">
+                <img src="src/img/selected/557466-6.jpg" alt="">
+                <div class="about_us__pluses">
+                    <div class="about_us__plus">
+                        <h3>1000+</h3>
+                        <span>партнеров</span>
+                    </div>
+                    <div class="about_us__plus">
+                        <h3>20+</h3>
+                        <span>лет опыта</span>
+                    </div>
+                    <div class="about_us__plus">
+                        <h3>15 000</h3>
+                        <span>уникальных товаров</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about_us__desc-block">
+                <h2 class="about_us__title">кто мы yes</h2>
+                <p class="about_us__text">
+                    Креативная компания «ТОП» работает на рынке канцтоваров
+                    Украины с 1998 года, за это время она успела стать одним
+                    из ведущих предприятий по оптовой торговле и производству
+                    канцелярских товаров в стране. Собственные бренды «1 Вересня»,
+                    «YES!», «Leo Planner», «SANTI»— самые яркие и эмоциональные
+                    бренды на канцелярском рынке. Поскольку мы не останавливаемся,
+                    а продолжаем расти и развиваться, наши возможности безграничны!
+                </p>
+                <a href="#" class="about_us__link">Читать больше<i class="arrow"></i></a>
+                <img class="about_us__yes-img" src="src/img/logo/yes.png" alt="">
+                <img class="about_us__plane-img" src="src/img/logo/YES_plane_orange.png" alt="">
+            </div>
+            </div>
     </section>
 </main>
-<footer>
-
+<footer class="footer">
+    <div class="footer__banner">
+        <div class="footer__wrap">
+            <h3 class="banner__title">Где купить?</h3>
+            <div class="banner__desc">
+                <i class="splash"></i>
+                <span class="banner__text">
+                    Товары бренда YES можно купить в любом регионе Украины!
+                </span>
+                <i class="splash"></i>
+            </div>
+            <a href="#" class="banner__button">смотреть магазины</a>
+        </div>
+    </div>
+    <div class="footer__wrap">
+        <div class="footer__top">
+            <div class="footer__copyright">
+                <a href="#"><img src="src/img/logo/logo.svg" alt=""></a>
+                <span>© 2019 «YES». <br> Все права защищены.</span>
+            </div>
+            <div class="footer__info">
+                <span>По вопросам сотрудничества пишите на почту: <a href="mailto:info@yes-tm.com">info@yes-tm.com</a></span>
+            </div>
+            <div class="footer__soc">
+                <a href="#" class="footer__soc-button"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer__soc-button"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="footer__soc-button"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__soc-button"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+        <div class="footer__hr"></div>
+        <div class="footer__bot">
+            <div class="footer__nav">
+                <a href="#" class="footer__point">каталог товаров</a>
+                <a href="#" class="footer__point">о бренде</a>
+                <a href="#" class="footer__point">наши колЛекции</a>
+                <a href="#" class="footer__point">Блог</a>
+                <a href="#" class="footer__point">где купить</a>
+                <a href="#" class="footer__point">контакты</a>
+            </div>
+            <form action="" class="footer__subscribe">
+                <label class="footer__label" for="footer__input">Будьте в курсе последних новостей</label>
+                <input type="text" id="footer__input" class="footer__input" placeholder="Введите ваш Email">
+                <button type="submit" class="footer__button">ПОДПИСАТЬСЯ</button>
+            </form>
+        </div>
+    </div>
 </footer>
-<script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-</script>
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/app/slick/slick.min.js"></script>
 <script src="src/js/scripts.js"></script>
 </body>
 </html>

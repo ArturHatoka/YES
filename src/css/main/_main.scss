@@ -205,11 +205,34 @@
           color: $orange;
           & .arrow{
             transition: .2s;
-            transform: translateX(25%);
+            transform: translateX(50%);
           }
         }
       }
     }
+  }
+  &__social{
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 365px;
+    align-items: flex-start;
+    justify-content: center;
+    background:
+            url("../img/selected/back banner.png") center center no-repeat,
+            url("../img/selected/back123.png") right center no-repeat;
+    background-blend-mode: overlay;
+  }
+  &__about_us{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-top: 110px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
   }
 }
 .arrow{
