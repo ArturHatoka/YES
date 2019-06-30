@@ -100,7 +100,68 @@
     }
   }
 
-  & .collections{
+  & .collections {
+    &__head {
+      position: relative;
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      background-image: url("../img/selected/collections_back.svg");
+      background-size: contain;
+      background-position: right center;
+      height: 520px;
+      background-repeat: no-repeat;
+      justify-content: center;
+      align-items: center;
+      &-wrap {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 1600px;
+        flex-direction: column;
+      }
+    }
 
+    &__slider{
+      &-wrap{
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin: 100px 0;
+      }
+    }
+
+  }
+  &.collections{
+    & .page__title {
+      max-width: 50%;
+    }
+    & .page__subtitle{
+      max-width: 35%;
+      font-family: "Proxima-Nova";
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.7;
+      letter-spacing: normal;
+      color: #000000;
+    }
+    & .page__backtitle{
+      max-width: 50%;
+      position: absolute;
+      top: -10%;
+      opacity: 0.04;
+      font-family: "Staccato555BT-A";
+      font-size: 184px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+      text-transform: uppercase;
+      z-index: 100;
+    }
   }
 }
