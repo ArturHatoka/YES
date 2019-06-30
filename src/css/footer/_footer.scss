@@ -23,9 +23,12 @@
     width: 100%;
     max-width: 1600px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
     flex-wrap: wrap;
+    &.between{
+      justify-content: space-between;
+    }
   }
   &__top{
     position: relative;
@@ -242,6 +245,7 @@
       line-height: 1.5;
       letter-spacing: normal;
       color: #f2f2f2;
+      text-align: center;
     }
     &__button{
       font-family: "Gotham-Pro";

@@ -240,6 +240,10 @@
         transition: border-bottom-color .2s;
         border-bottom: 5px solid $orange;
         padding-bottom: 0;
+        & img{
+          transition: width .4s;
+          width: 120%;
+        }
       }
 
       & img{
@@ -251,6 +255,7 @@
         justify-content: center;
         z-index: 400;
         filter: brightness(0.5);
+        transition: width .4s;
       }
       & a{
         font-size: 18px;
@@ -301,6 +306,7 @@
       opacity: .5;
       z-index: 300;
       display: none;
+
     }
   }
 }
@@ -311,4 +317,9 @@
   width: 30px;
   height: 2px;
   background: $orange;
+}
+.mobile {
+  &__menu {
+    display: none;
+  }
 }

@@ -58,6 +58,75 @@ $(document).ready(function () {
         }
     );
 
+    //Управление мобильного меню
+    $(".mobile__catalog-button").click(
+        function (){
+            $(".mobile__menu-wrap").addClass("active");
+            $(".mobile__menu-main").addClass("active");
+            $(".mobile__menu-search-button").addClass("active");
+            $(".mobile__menu-close").addClass("active");
+
+
+        }
+    );
+    $(".mobile__search").click(
+        function () {
+            $(".mobile__menu-wrap").addClass("active");
+            $(".mobile__menu-search").addClass("active");
+            $(".mobile__menu-button").addClass("active");
+            $(".mobile__menu-close").addClass("active");
+        }
+    );
+    $(".mobile__menu-button").click(
+        function () {
+            $(this).removeClass("active");
+            $(".mobile__menu-close").addClass("active");
+            $(".mobile__menu-search-button").addClass("active");
+            $(".mobile__menu-catalog").removeClass("active");
+            $(".mobile__menu-main").addClass("active");
+            $(".mobile__menu-search").removeClass("active");
+
+
+        }
+    );
+    $(".mobile__menu-close").click(
+        function () {
+            $(".mobile__menu-wrap").removeClass("active");
+            $(".mobile__menu-main").removeClass("active");
+            $(".mobile__menu-catalog").removeClass("active");
+            $(".mobile__menu-search").removeClass("active");
+            $(".mobile__menu-close").removeClass("active");
+            $(".mobile__menu-button").removeClass("active");
+            $(".mobile__menu-search-button").removeClass("active");
+
+
+        }
+    );
+    $(".mobile__menu-search-button").click(
+        function () {
+            $(this).removeClass("active");
+            $(".mobile__menu-button").addClass("active");
+            $(".mobile__menu-main").removeClass("active");
+            $(".mobile__menu-catalog").removeClass("active");
+            $(".mobile__menu-search").addClass("active");
+        }
+    );
+    $(".mobile__menu-catalog-button").click(
+        function () {
+            $(".mobile__menu-button").addClass("active");
+            $(".mobile__menu-main").removeClass("active");
+            $(".mobile__menu-catalog").addClass("active");
+            $(".mobile__menu-search-button").removeClass("active");
+        }
+    );
+    $(".mobile__menu-catalog-category").click(
+        function () {
+            $(this).toggleClass("active");
+            $(this).next(".mobile__menu-catalog-list").toggleClass("active");
+        }
+    );
+
+
 });
 
 //Инициализация слайдеров
@@ -106,7 +175,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: false,
-        draggable:false,
+        draggable:true,
         accessibility: false,
         variableWidth: true,
         zIndex: 300,
@@ -117,7 +186,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: false,
-        draggable:false,
+        draggable:true,
         accessibility: false,
         variableWidth: true,
         zIndex: 300,
@@ -147,6 +216,17 @@ $(document).ready(function () {
         });
 });
 
+
+$(document).ready(function () {
+
+    //Заполнение прогресс бара на слайдере товаров
+    $('.items-slider__slide').mousemove(
+        function () {
+            let progress = $(".items-slider__nav-number.slick-active").attr('data-progress');
+            $('.items-slider__nav-complete').width(progress*10 + '%');
+
+        });
+});
 $(document).ready(function () {
     //Иниц. слайдера товаров , управление slider__nav
     $('.news-slider__slider').slick({
@@ -154,7 +234,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: false,
-        draggable:false,
+        draggable:true,
         accessibility: false,
         variableWidth: true,
         zIndex: 300,
@@ -183,21 +263,13 @@ $(document).ready(function () {
         });
 });
 
-// $(document).ready(function () {
+$(document).ready(function () {
 
+    //Заполнение прогресс бара на слайдере товаров
+    $('.news-slider__slide').mousemove(
+        function () {
+            let progress = $(".news-slider__nav-number.slick-active").attr('data-progress');
+            $('.news-slider__nav-complete').width(progress*10 + '%');
 
-    // $('.items-slider .slick-arrow').click(
-    //     function () {
-    //         let progress = $('.items-slider__nav-number .slick-active').getAttribute('data-progress');
-    //         $('.items-slider__nav-complete').style.width = progress
-    //     }
-    // );
-
-    // $('.items-slider .slick-arrow').click(
-    //     function () {
-    //         this.querySelectorAll('.items-slider__nav-number .slick-active').forEach(slider__nav =>{
-    //             let position = slider__nav.getAttribute('data-progress');
-    //             slider__nav.style.width = `${position*10}px`;
-    //         });
-    //     });
-// });
+        });
+});
