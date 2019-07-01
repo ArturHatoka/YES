@@ -798,21 +798,29 @@
   .collections-slider__preimg{
     display: none;
   }
+  .collections-slider__nav {
+    bottom: -40px;
+  }
   .collections-slider__nav-wrap {
     left: 5px;
   }
   .collections-slider__title {
-    width: 70%;
-    padding-left: 5px;
+    width: 100%;
+    padding: 5px 0;
   }
   .collections-slider .slick-arrow {
     left: -40px;
-    top: 3600%;
+    top: 3000%;
   }
 }
 @media screen and (max-width: 375px){
-  .collections-slider .slick-arrow {
-    top: 1900%;
+  .collections-slider__nav-wrap {
+    left: -2px;
+  }
+}
+@media screen and (max-width: 320px){
+  .collections-slider__nav-wrap {
+    left: -10px;
   }
 }
 
