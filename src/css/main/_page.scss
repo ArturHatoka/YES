@@ -127,7 +127,15 @@
         position: relative;
         display: flex;
         width: 100%;
-        margin: 100px 0;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 0;
+        &:nth-child(2){
+          margin-top: 100px;
+        }
+        &:nth-child(4){
+          margin-bottom: 100px;
+        }
       }
     }
 

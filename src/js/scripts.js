@@ -217,9 +217,8 @@ $(document).ready(function () {
 });
 
 
+//Заполнение прогресс бара на слайдере товаров
 $(document).ready(function () {
-
-    //Заполнение прогресс бара на слайдере товаров
     $('.items-slider__slide').mousemove(
         function () {
             let progress = $(".items-slider__nav-number.slick-active").attr('data-progress');
@@ -227,8 +226,10 @@ $(document).ready(function () {
 
         });
 });
+
+
+//Иниц. слайдера новостей , управление slider__nav
 $(document).ready(function () {
-    //Иниц. слайдера товаров , управление slider__nav
     $('.news-slider__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -240,7 +241,7 @@ $(document).ready(function () {
         zIndex: 300,
         asNavFor: '.news-slider__nav-slider',
     });
-    //Иниц. slider__nav слайдера товаров
+    //Иниц. slider__nav слайдера новостей
     $('.news-slider__nav-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -254,7 +255,7 @@ $(document).ready(function () {
 
     });
 
-    //Заполнение прогресс бара на слайдере товаров
+    //Заполнение прогресс бара на слайдере новостей
     $('.news-slider .slick-arrow').click(
         function () {
             let progress = $(".news-slider__nav-number.slick-active").attr('data-progress');
@@ -263,13 +264,109 @@ $(document).ready(function () {
         });
 });
 
+//Заполнение прогресс бара на слайдере новостей
 $(document).ready(function () {
-
-    //Заполнение прогресс бара на слайдере товаров
     $('.news-slider__slide').mousemove(
         function () {
             let progress = $(".news-slider__nav-number.slick-active").attr('data-progress');
             $('.news-slider__nav-complete').width(progress*10 + '%');
 
+        });
+});
+
+//Иниц. слайдеров коллекций , управление slider__nav
+$(document).ready(function () {
+    $('#collections-slider__slider-first').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        draggable:true,
+        accessibility: false,
+        variableWidth: true,
+        zIndex: 300,
+        asNavFor: '#collections-slider__nav-slider-first',
+    });
+    //Иниц. slider__nav слайдера коллекций
+    $('#collections-slider__nav-slider-first').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:true,
+        dots:false,
+        fade: true,
+        asNavFor: '#collections-slider__slider-first',
+        prevArrow: '<button type="button" class="slick-prev"><span class="line"></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span class="line"></span></button>',
+        zIndex: 300,
+
+    });
+
+
+    $('#collections-slider__slider-second').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        draggable:true,
+        accessibility: false,
+        variableWidth: true,
+        zIndex: 300,
+        asNavFor: '#collections-slider__nav-slider-second',
+    });
+    //Иниц. slider__nav слайдера товаров
+    $('#collections-slider__nav-slider-second').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:true,
+        dots:false,
+        fade: true,
+        asNavFor: '#collections-slider__slider-second',
+        prevArrow: '<button type="button" class="slick-prev"><span class="line"></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span class="line"></span></button>',
+        zIndex: 300,
+
+    });
+
+
+    $('#collections-slider__slider-third').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        draggable:true,
+        accessibility: false,
+        variableWidth: true,
+        zIndex: 300,
+        asNavFor: '#collections-slider__nav-slider-third',
+    });
+    //Иниц. slider__nav слайдера товаров
+    $('#collections-slider__nav-slider-third').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:true,
+        dots:false,
+        fade: true,
+        asNavFor: '#collections-slider__slider-third',
+        prevArrow: '<button type="button" class="slick-prev"><span class="line"></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span class="line"></span></button>',
+        zIndex: 300,
+
+    });
+
+    //Заполнение прогресс бара на слайдере коллекций
+    $('.collections-slider .slick-arrow').click(
+        function () {
+            let progress = $(this).parent().find(".collections-slider__nav-number.slick-active").attr('data-progress');
+            $(this).parent().parent().parent().find(".collections-slider__nav-complete").width(progress*10 + '%');
+
+        });
+});
+
+//Заполнение прогресс бара на слайдере коллекций
+$(document).ready(function () {
+    $('.collections-slider__slide').mousemove(
+        function () {
+            let progress = $(this).parent().parent().parent().parent().find(".collections-slider__nav-number.slick-active").attr('data-progress');
+            $(this).parent().parent().parent().parent().find(".collections-slider__nav-complete").width(progress*10 + '%');
         });
 });
