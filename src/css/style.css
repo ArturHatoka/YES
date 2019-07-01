@@ -20,12 +20,14 @@ body {
   height: auto; }
 
 .header {
-  position: relative;
+  position: fixed;
   display: flex;
   width: 100%;
   background: white;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 500;
+  top: 0; }
   .header__form {
     position: absolute;
     display: none;
@@ -388,7 +390,8 @@ body {
   width: 100%;
   background-color: #f4f4f4;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 117px; }
   .main__category {
     position: relative;
     display: flex;
@@ -1651,7 +1654,8 @@ body {
   background: #f4f4f4;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 117px; }
   .page__head {
     position: relative;
     display: flex;
