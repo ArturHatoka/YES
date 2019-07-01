@@ -404,7 +404,12 @@ body {
       position: absolute;
       bottom: 0;
       right: 0;
-      z-index: 100; }
+      z-index: 100;
+      width: 75%;
+      transition: width .3s; }
+      .main__category .category__img:hover {
+        width: 85%;
+        transition: width .3s; }
       .main__category .category__img--long {
         position: absolute;
         display: flex;
@@ -1675,7 +1680,11 @@ body {
         display: flex;
         bottom: 0;
         right: 0;
-        width: 50%; }
+        width: 50%;
+        transition: width .3s; }
+      .page .catalog__box:hover .catalog__box-img {
+        width: 55%;
+        transition: width .3s; }
   .page .collections__head {
     position: relative;
     display: flex;

@@ -57,6 +57,16 @@ $(document).ready(function () {
             $(this).children(".items-slider__slide-links").removeClass("active");
         }
     );
+    $(".collections-slider__slide ").hover(
+        function () {
+            $(this).addClass("active");
+            $(this).children(".collections-slider__slide-links").addClass("active");
+        },
+        function () {
+            $(this).removeClass("active");
+            $(this).children(".collections-slider__slide-links").removeClass("active");
+        }
+    );
 
     //Управление мобильного меню
     $(".mobile__catalog-button").click(

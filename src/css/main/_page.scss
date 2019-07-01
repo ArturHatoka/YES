@@ -96,6 +96,13 @@
         bottom: 0;
         right: 0;
         width: 50%;
+        transition: width .3s;
+      }
+      &:hover{
+        & .catalog__box-img{
+          width:55%;
+          transition: width .3s;
+        }
       }
     }
   }

@@ -788,7 +788,26 @@
     & .catalog__box-title{
       font-size: 21px;
     }
-
+    &__backtitle{
+      display: none!important;
+    }
+    & .collections__head{
+      height: 340px;
+    }
+  }
+  .collections-slider__preimg{
+    display: none;
+  }
+  .collections-slider__nav-wrap {
+    left: 5px;
+  }
+  .collections-slider__title {
+    width: 70%;
+    padding-left: 5px;
+  }
+  .collections-slider .slick-arrow {
+    left: -40px;
+    top: 100px;
   }
 }
 
