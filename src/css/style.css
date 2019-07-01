@@ -26,6 +26,75 @@ body {
   background: white;
   align-items: center;
   justify-content: center; }
+  .header__form {
+    position: absolute;
+    display: none;
+    width: 75%;
+    bottom: -100%; }
+    .header__form.active {
+      display: flex; }
+  .header__input {
+    outline: none;
+    border: 0 none;
+    border-bottom: 1px solid #292b31;
+    width: 100%;
+    padding-top: 5px;
+    font-family: "Gotham-Pro";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    background: 0 none; }
+    .header__input::-webkit-input-placeholder {
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #292b31; }
+    .header__input:-moz-placeholder {
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #292b31; }
+    .header__input::-moz-placeholder {
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #292b31; }
+    .header__input:-ms-input-placeholder {
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #292b31; }
+  .header__submit {
+    background: none;
+    border: 0 none;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    cursor: pointer;
+    font-size: 16px; }
   .header__navigation {
     position: relative;
     display: flex;
@@ -153,10 +222,27 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     transition: color .2s;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0.4);
+    display: none;
+    width: 50px;
+    outline: none; }
+    .header__language.active {
+      color: black;
+      display: flex; }
+    .header__language.hover {
+      display: flex; }
     .header__language:hover {
       color: #ff8400;
       transition: color .2s; }
+    .header__language-wrap {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: height .2s;
+      height: 30px;
+      align-items: center;
+      justify-content: center; }
   .header .catalog__button {
     position: relative;
     display: flex;

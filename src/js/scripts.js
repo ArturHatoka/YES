@@ -136,6 +136,38 @@ $(document).ready(function () {
         }
     );
 
+    //Отображение языков и выбор
+    $(".header__language-wrap").hover(
+        function () {
+            $(this).children().addClass("hover");
+        },
+        function f() {
+            $(this).children().removeClass("hover");
+        }
+    );
+    $(".header__language").click(
+        function () {
+            $(this).parent().children().removeClass("active");
+            $(this).addClass("active");
+        }
+    );
+    //Выпадание поиска в хедере
+    $(".header__search").hover(
+        function () {
+            $(".header__form").stop(false, false).fadeIn(500).css("display", "flex").addClass("active");
+        },
+        function () {
+            $(".header__form").stop(false, false).fadeOut(500).removeClass("active");
+        }
+    );
+    $(".header__form").hover(
+        function () {
+            $(this).stop(false, false).fadeIn(500).css("display", "flex").addClass("active")
+        },
+        function () {
+            $(this).stop(false, false).fadeOut(500).removeClass("active")
+        }
+    );
 
 });
 

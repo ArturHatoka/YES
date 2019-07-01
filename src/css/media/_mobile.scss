@@ -792,7 +792,7 @@
       display: none!important;
     }
     & .collections__head{
-      height: 340px;
+      height: 360px;
     }
   }
   .collections-slider__preimg{
@@ -807,7 +807,12 @@
   }
   .collections-slider .slick-arrow {
     left: -40px;
-    top: 100px;
+    top: 3600%;
+  }
+}
+@media screen and (max-width: 375px){
+  .collections-slider .slick-arrow {
+    top: 1900%;
   }
 }
 

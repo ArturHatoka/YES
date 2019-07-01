@@ -5,7 +5,83 @@
   background: white;
   align-items: center;
   justify-content: center;
-
+  &__form{
+    position: absolute;
+    display: none;
+    width: 75%;
+    bottom: -100%;
+    &.active{
+      display: flex;
+    }
+  }
+  &__input{
+    outline: none;
+    border: 0 none;
+    border-bottom: 1px solid $dark_gray;
+    width: 100%;
+    padding-top: 5px;
+    font-family: "Gotham-Pro";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    background: 0 none;
+    &::-webkit-input-placeholder {
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: $dark_gray;
+    }
+    &:-moz-placeholder           {
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: $dark_gray;
+    }
+    &::-moz-placeholder          {
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: $dark_gray;
+    }
+    &:-ms-input-placeholder{
+      opacity: 0.8;
+      font-family: "Gotham-Pro";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: $dark_gray;
+    }
+  }
+  &__submit{
+    background: none;
+    border: 0 none;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    cursor: pointer;
+    font-size: 16px;
+  }
   &__navigation{
     position: relative;
     display: flex;
@@ -154,9 +230,29 @@
     cursor: pointer;
     transition: color .2s;
     transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0.4);
+    display: none;
+    width: 50px;
+    outline: none;
+    &.active{
+      color: black;
+      display: flex;
+    }
+    &.hover{
+      display: flex;
+    }
     &:hover{
       color: $orange;
       transition: color .2s;
+    }
+    &-wrap{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: height .2s;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
     }
   }
   .catalog{
