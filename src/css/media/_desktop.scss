@@ -23,6 +23,15 @@
   .page__body{
     width: 95%;
   }
+  .page{
+    & .collections__head{
+      background-position: 150% center;
+    }
+    & .collections__head-wrap{
+      width: 95%;
+    }
+  }
+
 }
 @media screen and (max-width: 1300px){
   .header__navigation, .header__navigation button{
@@ -193,6 +202,28 @@
   .vertical-slider__social {
     justify-content: center;
   }
+  .page{
+    & .collections__slider-wrap{
+      flex-direction: column;
+      margin: 25px 0;
+    }
+    & .collections__head {
+      background-position: 275px center;
+    }
+  }
+  .collections-slider{
+    width: 100%;
+  }
+  .collections-slider__preimg {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    & img{
+      position: absolute;
+      top: -60%;
+    }
+  }
+
 }
 
 @media screen and (max-width: 768px){
@@ -280,6 +311,19 @@
     & .catalog__box{
       width: 90%;
     }
+    &  .collections__head {
+      background-image: none;
+      height: 300px;
+    }
+    &__title{
+      max-width: 100% !important;
+    }
+    &__subtitle{
+      max-width: 100% !important;
+    }
+  }
+  .collections-slider__preimg img {
+    top: -35%;
   }
   .mobile__menu-footer{
     position: relative;

@@ -57,8 +57,18 @@
             <div class="header__inputs">
                 <button class="header__city"><i class="fas fa-map-marker-alt"></i>Киев</button>
                 <i class="fas fa-search header__search"></i>
+                <form class="header__form" action="">
+                    <input class="header__input" type="text" placeholder="Введите слово">
+                    <button class="header__submit" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
                 <div class="splash"></div>
-                <button class="header__language">RU</button>
+                <div class="header__language-wrap">
+                    <button class="header__language active">RU</button>
+                    <button class="header__language">UA</button>
+                    <button class="header__language">ENG</button>
+                </div>
             </div>
             <div class="mobile__menu">
                 <i class="fas fa-search mobile__search"></i>
@@ -167,298 +177,508 @@
         </div>
     </section>
     <section class="collections__slider-wrap">
-        <section class="items-slider">
-            <div class="items-slider__head">
-                <div class="items-slider__tabs">
-                    <button id="items_slider_hits_button" class="items-slider__tab active">Хиты продаж</button>
-                    <button id="items_slider_news_button" class="items-slider__tab">Новинки</button>
+        <div class="collections-slider__preimg">
+            <img src="src/img/selected/collection1.svg" alt="">
+        </div>
+        <div class="collections-slider">
+            <div class="collections-slider__head">
+                <div class="collections-slider__title">
+                    <h2 class="collections-slider__title-text">SUMMER 2019</h2>
+                    <span class="collections-slider__subtitle">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
+                    </span>
                 </div>
-                <div class="items-slider__nav">
-                    <div class="items-slider__nav-wrap">
-                        <div class="items-slider__nav-slider">
-                            <span class="items-slider__nav-number" data-progress="1">1</span>
-                            <span class="items-slider__nav-number" data-progress="2">2</span>
-                            <span class="items-slider__nav-number" data-progress="3">3</span>
-                            <span class="items-slider__nav-number" data-progress="4">4</span>
-                            <span class="items-slider__nav-number" data-progress="5">5</span>
-                            <span class="items-slider__nav-number" data-progress="6">6</span>
-                            <span class="items-slider__nav-number" data-progress="7">7</span>
-                            <span class="items-slider__nav-number" data-progress="8">8</span>
-                            <span class="items-slider__nav-number" data-progress="9">9</span>
-                            <span class="items-slider__nav-number" data-progress="10">10</span>
+                <div class="collections-slider__nav">
+                    <div class="collections-slider__nav-wrap">
+                        <div class="collections-slider__nav-slider" id="collections-slider__nav-slider-first">
+                            <span class="collections-slider__nav-number" data-progress="1">1</span>
+                            <span class="collections-slider__nav-number" data-progress="2">2</span>
+                            <span class="collections-slider__nav-number" data-progress="3">3</span>
+                            <span class="collections-slider__nav-number" data-progress="4">4</span>
+                            <span class="collections-slider__nav-number" data-progress="5">5</span>
+                            <span class="collections-slider__nav-number" data-progress="6">6</span>
+                            <span class="collections-slider__nav-number" data-progress="7">7</span>
+                            <span class="collections-slider__nav-number" data-progress="8">8</span>
+                            <span class="collections-slider__nav-number" data-progress="9">9</span>
+                            <span class="collections-slider__nav-number" data-progress="10">10</span>
                         </div>
                         <span>/ 10</span>
                     </div>
-                    <div class="items-slider__nav-progress">
-                        <div class="items-slider__nav-complete"></div>
+                    <div class="collections-slider__nav-progress">
+                        <div class="collections-slider__nav-complete"></div>
                     </div>
                 </div>
             </div>
-            <div id="items_slider_hits" class="items-slider__slider active">
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+            <div id="collections-slider__slider-first" class="collections-slider__slider">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1201</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1201</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1202</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1202</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1203</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1203</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1204</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1204</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1205</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1205</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1206</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1206</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1207</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1207</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1208</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1208</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1209</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1209</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
                     Рюкзак молодежный ST-32 Space Legend
                 </span>
-                    <span class="items-slider__slide-price"><b>1210</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
+                    <span class="collections-slider__slide-price"><b>1210</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
                     </div>
-                    <span class="items-slider__slide-tab">Хит</span>
-                </div>
-            </div>
-            <div id="items_slider_news" class="items-slider__slider">
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1201</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1202</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1203</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1204</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1205</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1206</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1207</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1208</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1209</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
-                </div>
-                <div class="items-slider__slide">
-                    <img class="items-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
-                    <span class="items-slider__slide-article">Артикул: 38276482</span>
-                    <span class="items-slider__slide-desc">
-                    Рюкзак молодежный ST-32 Space Legend
-                </span>
-                    <span class="items-slider__slide-price"><b>1210</b> грн</span>
-                    <div class="items-slider__slide-links">
-                        <a href="" class="items-slider__slide-link">где купить?</a>
-                        <a href="" class="items-slider__slide-link">подробнее</a>
-                    </div>
-                    <span class="items-slider__slide-tab">Новинка</span>
+                    <span class="collections-slider__slide-tab">Новинка</span>
                 </div>
             </div>
-        </section>
+            <a href="catalog.html" class="collections-slider__all-link">ВСЕ ТОВАРЫ КОЛЕКЦИИ</a>
+        </div>
+    </section>
+    <section class="collections__slider-wrap">
+        <div class="collections-slider__preimg">
+            <img src="src/img/selected/collection2.svg" alt="">
+        </div>
+        <div class="collections-slider">
+            <div class="collections-slider__head">
+                <div class="collections-slider__title">
+                    <h2 class="collections-slider__title-text">SUMMER 2019</h2>
+                    <span class="collections-slider__subtitle">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
+                    </span>
+                </div>
+                <div class="collections-slider__nav">
+                    <div class="collections-slider__nav-wrap">
+                        <div class="collections-slider__nav-slider" id="collections-slider__nav-slider-second">
+                            <span class="collections-slider__nav-number" data-progress="1">1</span>
+                            <span class="collections-slider__nav-number" data-progress="2">2</span>
+                            <span class="collections-slider__nav-number" data-progress="3">3</span>
+                            <span class="collections-slider__nav-number" data-progress="4">4</span>
+                            <span class="collections-slider__nav-number" data-progress="5">5</span>
+                            <span class="collections-slider__nav-number" data-progress="6">6</span>
+                            <span class="collections-slider__nav-number" data-progress="7">7</span>
+                            <span class="collections-slider__nav-number" data-progress="8">8</span>
+                            <span class="collections-slider__nav-number" data-progress="9">9</span>
+                            <span class="collections-slider__nav-number" data-progress="10">10</span>
+                        </div>
+                        <span>/ 10</span>
+                    </div>
+                    <div class="collections-slider__nav-progress">
+                        <div class="collections-slider__nav-complete"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="collections-slider__slider-second" class="collections-slider__slider">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1201</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1202</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1203</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1204</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1205</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1206</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1207</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1208</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1209</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1210</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+            </div>
+            <a href="catalog.html" class="collections-slider__all-link">ВСЕ ТОВАРЫ КОЛЕКЦИИ</a>
+        </div>
+    </section>
+    <section class="collections__slider-wrap">
+        <div class="collections-slider__preimg">
+            <img src="src/img/selected/collection3.svg" alt="">
+        </div>
+        <div class="collections-slider">
+            <div class="collections-slider__head">
+                <div class="collections-slider__title">
+                    <h2 class="collections-slider__title-text">SUMMER 2019</h2>
+                    <span class="collections-slider__subtitle">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
+                    </span>
+                </div>
+                <div class="collections-slider__nav">
+                    <div class="collections-slider__nav-wrap">
+                        <div class="collections-slider__nav-slider" id="collections-slider__nav-slider-third">
+                            <span class="collections-slider__nav-number" data-progress="1">1</span>
+                            <span class="collections-slider__nav-number" data-progress="2">2</span>
+                            <span class="collections-slider__nav-number" data-progress="3">3</span>
+                            <span class="collections-slider__nav-number" data-progress="4">4</span>
+                            <span class="collections-slider__nav-number" data-progress="5">5</span>
+                            <span class="collections-slider__nav-number" data-progress="6">6</span>
+                            <span class="collections-slider__nav-number" data-progress="7">7</span>
+                            <span class="collections-slider__nav-number" data-progress="8">8</span>
+                            <span class="collections-slider__nav-number" data-progress="9">9</span>
+                            <span class="collections-slider__nav-number" data-progress="10">10</span>
+                        </div>
+                        <span>/ 10</span>
+                    </div>
+                    <div class="collections-slider__nav-progress">
+                        <div class="collections-slider__nav-complete"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="collections-slider__slider-third" class="collections-slider__slider">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1201</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1202</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1203</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1204</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1205</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1206</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1207</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1208</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1209</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1210</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+            </div>
+            <a href="catalog.html" class="collections-slider__all-link">ВСЕ ТОВАРЫ КОЛЕКЦИИ</a>
+        </div>
     </section>
 </main>
 <footer class="footer">

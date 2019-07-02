@@ -6,7 +6,7 @@
   background-color: #f4f4f4;
   align-items: center;
   justify-content: center;
-
+  margin-top: 117px;
 
 
   &__category{
@@ -132,6 +132,12 @@
         bottom: 0;
         right: 0;
         z-index: 100;
+        width: 75%;
+        transition: width .3s;
+        &:hover{
+          width: 85%;
+          transition: width .3s;
+        }
         &--long{
           position: absolute;
           display: flex;

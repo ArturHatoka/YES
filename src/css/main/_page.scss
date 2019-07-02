@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 117px;
   &__head{
     position: relative;
     display: flex;
@@ -96,6 +97,13 @@
         bottom: 0;
         right: 0;
         width: 50%;
+        transition: width .3s;
+      }
+      &:hover{
+        & .catalog__box-img{
+          width:55%;
+          transition: width .3s;
+        }
       }
     }
   }
@@ -127,7 +135,15 @@
         position: relative;
         display: flex;
         width: 100%;
-        margin: 100px 0;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 0;
+        &:nth-child(2){
+          margin-top: 100px;
+        }
+        &:nth-child(4){
+          margin-bottom: 100px;
+        }
       }
     }
 
