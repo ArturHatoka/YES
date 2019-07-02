@@ -31,6 +31,9 @@
       width: 95%;
     }
   }
+  .header__language{
+    justify-content: center;
+  }
 
 }
 @media screen and (max-width: 1300px){
@@ -72,6 +75,15 @@
   .banner__desc, .banner__title, .banner__button{
     margin: 10px 10%;
   }
+  .splash{
+    display: none;
+  }
+  .header__form{
+    width: 100%;
+  }
+  .vertical-slider__title {
+    font-size: 44px;
+  }
 }
 @media screen and (max-width: 1024px){
   .vertical-slider{
@@ -83,6 +95,9 @@
     //  width: 100%;
     //  height: 330px;
     //}
+  }
+  .slick-arrow{
+    z-index: 300;
   }
   .main__category .category__subtitle {
     font-size: 150px;

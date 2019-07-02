@@ -249,29 +249,7 @@ $(document).ready(function () {
 
     });
 
-    //Заполнение прогресс бара на слайдере товаров
-    $('.items-slider .slick-arrow').click(
-        function () {
-            let progress = $(".items-slider__nav-number.slick-active").attr('data-progress');
-            $('.items-slider__nav-complete').width(progress*10 + '%');
-
-        });
-});
-
-
-//Заполнение прогресс бара на слайдере товаров
-$(document).ready(function () {
-    $('.items-slider__slide').mousemove(
-        function () {
-            let progress = $(".items-slider__nav-number.slick-active").attr('data-progress');
-            $('.items-slider__nav-complete').width(progress*10 + '%');
-
-        });
-});
-
-
-//Иниц. слайдера новостей , управление slider__nav
-$(document).ready(function () {
+    //Иниц. слайдера новостей , управление slider__nav
     $('.news-slider__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -297,27 +275,8 @@ $(document).ready(function () {
 
     });
 
-    //Заполнение прогресс бара на слайдере новостей
-    $('.news-slider .slick-arrow').click(
-        function () {
-            let progress = $(".news-slider__nav-number.slick-active").attr('data-progress');
-            $('.news-slider__nav-complete').width(progress*10 + '%');
 
-        });
-});
-
-//Заполнение прогресс бара на слайдере новостей
-$(document).ready(function () {
-    $('.news-slider__slide').mousemove(
-        function () {
-            let progress = $(".news-slider__nav-number.slick-active").attr('data-progress');
-            $('.news-slider__nav-complete').width(progress*10 + '%');
-
-        });
-});
-
-//Иниц. слайдеров коллекций , управление slider__nav
-$(document).ready(function () {
+    //Иниц. слайдеров коллекций , управление slider__nav
     $('#collections-slider__slider-first').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -394,21 +353,15 @@ $(document).ready(function () {
         zIndex: 300,
 
     });
-
-    //Заполнение прогресс бара на слайдере коллекций
-    $('.collections-slider .slick-arrow').click(
-        function () {
-            let progress = $(this).parent().find(".collections-slider__nav-number.slick-active").attr('data-progress');
-            $(this).parent().parent().parent().find(".collections-slider__nav-complete").width(progress*10 + '%');
-
-        });
 });
 
-//Заполнение прогресс бара на слайдере коллекций
+
+//Заполнение прогресс бара на слайдере
 $(document).ready(function () {
-    $('.collections-slider__slide').mousemove(
+    $('.slick-slider').on('afterChange',
         function () {
-            let progress = $(this).parent().parent().parent().parent().find(".collections-slider__nav-number.slick-active").attr('data-progress');
-            $(this).parent().parent().parent().parent().find(".collections-slider__nav-complete").width(progress*10 + '%');
-        });
+            var items = $(this).parents("[class $= slider]").find("[class *= number]").length;
+            var progress = $(this).parents("[class $= slider]").find("[class *= number].slick-active").attr('data-progress');
+            $(this).parents("[class $= slider]").find("[class $= complete]").width(progress/items*100 + '%');
+    });
 });
