@@ -180,4 +180,33 @@
       z-index: 100;
     }
   }
+  & .category{
+    margin-top: 30px;
+    align-items: flex-start;
+    @import "sidebar";
+    @import "category_body";
+  }
+
+  #price,#price2 {
+    border: solid 1px #ededed;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding:10px;
+    width:80px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #202124;
+    margin: 0 20px 0 10px;
+  }
+  #options {
+    width:300px;
+    padding:10px;
+  }
+  #slider_price {
+    margin:20px 20px 20px 30px;
+  }
 }
