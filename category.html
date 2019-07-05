@@ -173,6 +173,11 @@
     </section>
     <section class="page__body category">
         <div class="category__sidebar">
+            <div class="category__back"></div>
+            <div class="category__menu">
+                <button><i class="fas fa-chevron-left"></i>Назад</button>
+                <span>Фильтр</span>
+            </div>
             <div class="category__sort-price">
                 <h3 class="category__sidebar-title active">По цене</h3>
                 <div class="category__sort-price__pop-up active">
@@ -285,6 +290,10 @@
                     </div>
                 </div>
             </div>
+            <div class="category__submit">
+                <button>Показать</button>
+                <button>Очистить</button>
+            </div>
         </div>
         <div class="category__body">
             <div class="category__head">
@@ -303,6 +312,17 @@
                         <option value="">21</option>
                         <option value="">все</option>
                     </select><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="category__head-sort mobile">
+                    <span><select class="head-sort" name="head-sort" id="head-sort">
+                        <option value="" selected>По умолчанию</option>
+                        <option value="">По возростанию</option>
+                        <option value="">По убыванию</option>
+                        <option value="">По дате</option>
+                    </select><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="category__head-filter">
+                    <button><i class="fas fa-filter"></i> Фильтр товаров</button>
                 </div>
             </div>
             <div class="category__wrap">

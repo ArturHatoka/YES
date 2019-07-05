@@ -1,3 +1,9 @@
+&__back{
+  display: none;
+}
+&__menu{
+  display: none;
+}
 &__body{
   position: relative;
   display: flex;
@@ -53,6 +59,12 @@
       transform: translate(0, 10%) rotate(0deg);
       transition: .3s;
     }
+    &.mobile{
+      display: none;
+    }
+  }
+  &-filter{
+    display: none;
   }
   &-show{
     font-family: "Proxima-Nova";
@@ -92,6 +104,9 @@
       transition: .3s;
     }
   }
+}
+&__submit{
+  display: none;
 }
 &__wrap{
   position: relative;

@@ -2474,6 +2474,10 @@ body {
             background: #ff8400;
             left: 4px;
             display: none; }
+    .page .category__back {
+      display: none; }
+    .page .category__menu {
+      display: none; }
     .page .category__body {
       position: relative;
       display: flex;
@@ -2525,6 +2529,10 @@ body {
           color: #ff8400;
           transform: translate(0, 10%) rotate(0deg);
           transition: .3s; }
+        .page .category__head-sort.mobile {
+          display: none; }
+      .page .category__head-filter {
+        display: none; }
       .page .category__head-show {
         font-family: "Proxima-Nova";
         font-size: 18px;
@@ -2559,6 +2567,8 @@ body {
           color: #ff8400;
           transform: translate(0, 10%) rotate(0deg);
           transition: .3s; }
+    .page .category__submit {
+      display: none; }
     .page .category__wrap {
       position: relative;
       display: flex;

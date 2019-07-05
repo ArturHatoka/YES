@@ -197,4 +197,18 @@ $(document).ready(function () {
             $(this).children(".category__item-links").removeClass("active");
         }
     );
+    //Раскрытие сортировок на мобилке
+    $(".category__head-filter button").click(
+        function () {
+            $(".category__sidebar").addClass("active");
+            $(".category__back").addClass("active")
+        }
+    );
+    $(".category__menu button, .category__back").click(
+        function () {
+            $(".category__sidebar").removeClass("active");
+            $(".category__back").removeClass("active")
+        }
+    );
+
 });
