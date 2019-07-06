@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>YES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="src/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="src/app/fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="src/app/slick/slick.css">
+    <!--<link rel="stylesheet" type="text/css" href="src/app/slick/slick-theme.css">-->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/media.css">
+    <link rel="icon" href="src/img/logo/logo.svg" sizes="16x16">
+</head>
+<body>
+<header class="header">
+    <div class="header__wrap">
+        <nav class="header__navigation">
+            <div class="header__logo">
+                <a href="index.html"><img src="src/img/logo/logo.svg" alt=""></a>
+            </div>
+            <div class="header__catalog">
+                <button class="catalog__button"></button>
+                <span>Каталог товаров</span>
+                <div class="catalog__wrap">
+                    <div class="catalog__box">
+                        <div class="catalog__category">
+                            <img src="src/img/selected/557466-6.jpg" alt="">
+                            <a href="#">Рюкзаки</a>
+                        </div>
+                        <div class="catalog__category">
+                            <img src="src/img/selected/557466-6.jpg" alt="">
+                            <a href="#">Рюкзаки</a>
+                        </div>
+                        <div class="catalog__category">
+                            <img src="src/img/selected/557466-6.jpg" alt="">
+                            <a href="#">Рюкзаки</a>
+                        </div>
+                        <div class="catalog__category">
+                            <img src="src/img/selected/557466-6.jpg" alt="">
+                            <a href="#">Рюкзаки</a>
+                        </div>
+                    </div>
+                    <div class="catalog__all">
+                        <a href="catalog.html">Смотреть все товары</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <a href="#">о бренде</a>
+                <a href="#">наши колЛекции</a>
+                <a href="#">Блог</a>
+                <a href="#">где купить</a>
+                <a href="#">контакты</a>
+            </div>
+            <div class="header__inputs">
+                <button class="header__city"><i class="fas fa-map-marker-alt"></i>Киев</button>
+                <i class="fas fa-search header__search"></i>
+                <form class="header__form" action="">
+                    <input class="header__input" type="text" placeholder="Введите слово">
+                    <button class="header__submit" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <div class="splash"></div>
+                <div class="header__language-wrap">
+                    <button class="header__language active">RU</button>
+                    <button class="header__language">UA</button>
+                    <button class="header__language">ENG</button>
+                </div>
+            </div>
+            <div class="mobile__menu">
+                <i class="fas fa-search mobile__search"></i>
+                <button class="mobile__catalog-button active"></button>
+                <div class="mobile__menu-wrap">
+                    <div class="mobile__menu-head">
+                        <div class="mobile__menu-logo">
+                            <img class="mobile__menu-exit"  src="src/img/logo/YES_full_white.png" alt="">
+                        </div>
+                        <div class="mobile__menu-nav">
+                            <div class="mobile__menu-search-button">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="mobile__menu-close">
+                                <button></button>
+                            </div>
+                            <div class="mobile__menu-button">
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile__menu-main">
+                        <button class="mobile__menu-catalog-button">каталог товаров</button>
+                        <a href="#">о бренде</a>
+                        <a href="#">наши колекции</a>
+                        <a href="#">Блог</a>
+                        <a href="#">где купить</a>
+                        <a href="#">контакты</a>
+                    </div>
+                    <div class="mobile__menu-catalog">
+                        <button class="mobile__menu-catalog-category">рюкзаки и сумки</button>
+                        <div class="mobile__menu-catalog-list">
+                            <a href="#"  class="mobile__menu-catalog-link">Женские рюкзаки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Молодежные сумки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Рюкзаки Kids Рбкзаки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">молодежные  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Косметички  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Спортивные сумки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Сумки Чехлы для ноутбуков и планшетов  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Школьные рюкзаки </a>
+                        </div>
+                        <button class="mobile__menu-catalog-category">детское творчество</button>
+                        <div class="mobile__menu-catalog-list">
+                            <a href="#"  class="mobile__menu-catalog-link">Женские рюкзаки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Молодежные сумки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Рюкзаки Kids Рбкзаки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">молодежные  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Косметички  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Спортивные сумки  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Сумки Чехлы для ноутбуков и планшетов  </a>
+                            <a href="#"  class="mobile__menu-catalog-link">Школьные рюкзаки </a>
+                        </div>
+                        <button class="mobile__menu-catalog-category">детское творчество</button>
+                        <button class="mobile__menu-catalog-category">канцтовары</button>
+                        <button class="mobile__menu-catalog-category">аксессуары</button>
+                    </div>
+                    <div class="mobile__menu-search">
+                        <form action="">
+                            <input type="text" placeholder="Введите слово">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="mobile__menu-footer">
+                        <div class="mobile__menu-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>КИЕВ</span>
+                        </div>
+                        <div class="mobile__menu-language">
+                            <span>Ua</span>
+                            <span>Eng</span>
+                            <span class="active">Ru</span>
+                        </div>
+                        <div class="mobile__menu-contacts">
+                            <span>По вопросам сотрудничества пишите на почту:</span>
+                            <a href="mailto:@">info@yes-tm.com</a>
+                        </div>
+                        <div class="mobile__menu-social">
+                            <a class="mobile__menu-social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mobile__menu-social-link" href="#"><i class="fab fa-youtube"></i></a>
+                            <a class="mobile__menu-social-link" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="catalog__background"></div>
+</header>
+<main class="page good">
+    <section class="good__body">
+        <div class="good__top">
+            <div class="good__img">
+                <div class="crumbs">
+                    <a href="index.html" class="crumbs__link"> Главная</a>
+                    /
+                    <a href="category.html" class="crumbs__link"> Рюкзаки и сумки</a>
+                    /
+                    <span class="crumbs__active">Рюкзак школьный T-23 "Pacific"</span>
+                </div>
+                <div class="good__img-box">
+                    <div class="good__img-big">
+                        <img src="src/img/selected/557299-2.jpg" alt="">
+                    </div>
+                    <div class="good__img-small">
+                        <div class="active">
+                            <img src="src/img/selected/557299-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="src/img/selected/557424-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="src/img/selected/557091-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="src/img/selected/557299-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="good__option">
+                <div class="crumbs">
+                   <button>
+                       <span class="crumbs__arrow-left"></span>
+                   </button>
+                    <span class="crumbs__number">4</span>
+                    /
+                    <span class="crumbs__number-all">150</span>
+                    <button>
+                        <span class="crumbs__arrow-right"></span>
+                    </button>
+                </div>
+                <div class="good__option-box">
+                    <div class="good__option-head">
+                        <span>
+                            Артикул: <b>556996</b>
+                        </span>
+                        <div class="good__option-stars">
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="good__option-title">
+                        РЮКЗАК ШКОЛЬНЫЙ T-23
+                            "PACIFIC"
+                    </h3>
+                    <div class="good__option-review">
+                        <span> Всего отзывов: <a href="">23</a></span>
+                    </div>
+                    <div class="good__option-desc">
+                        <span>Рюкзак школьный T-23 "Pacific". Стильная вещь - это, прежде всего, качественная вещь. Рюкзак, в котором необходимое количество карманов и основных отделений, не рвется подкладка, продумана эргономика внутреннего пространства. Именно такой - рюкзак Yes ...
+                        </span>
+                        <button>читать полностью</button>
+                        <span class="hidden">Рюкзак школьный T-23 "Pacific". Стильная вещь - это, прежде всего, качественная вещь. Рюкзак, в котором необходимое количество карманов и основных отделений, не рвется подкладка, продумана эргономика внутреннего пространства. Именно такой - рюкзак Yes ...
+                        </span>
+                    </div>
+                    <div class="good__option-compare">
+                        <button><i class="fas fa-check-square"></i>Добавить в сравнение</button>
+                        <div class="good__option-compare-link">
+                            <span class="number">1</span>
+                            <a href="#">Сравнить<span></span></a>
+                        </div>
+                    </div>
+                    <div class="good__option-color">
+                        <h3 class="good__option-color-title">Доступные цвета</h3>
+                        <div class="good__option-color__pop-up">
+                            <span><input id="cl1" checked type="radio" value="bla"><label for="cl1"></label></span>
+                            <span><input id="cl2" type="radio" value="blu"><label for="cl2"></label></span>
+                            <span><input id="cl3" type="radio" value="yel"><label for="cl3"></label></span>
+                            <span><input id="cl4" type="radio" value="gre"><label for="cl4"></label></span>
+                            <span><input id="cl5" type="radio" value="red"><label for="cl5"></label></span>
+                        </div>
+                    </div>
+                    <div class="good__option-price">
+                        <span><b>1200 </b> грн</span>
+                    </div>
+                    <div class="good__option-buttons">
+                        <button class="good__option-button">ГДЕ КУПИТЬ?</button>
+                        <button class="good__option-button">Задать вопрос</button>
+                    </div>
+                    <div class="good__option-share">
+                        <span>Поделиться</span>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="good__option-share-mobile"><i class="fas fa-share-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="good__desc">
+            <div class="good__desc-head">
+                <div class="good__desc-wrap">
+                    <button class="active">ОПИСАНИЕ / Характеристики</button>
+                    <button>список интернет магазинов</button>
+                    <button>список офлайн магазинов</button>
+                    <button>отзывы о товаре</button>
+                </div>
+            </div>
+            <div class="good__desc-bot">
+                <h3 class="category__sidebar-title active">ОПИСАНИЕ / Характеристики</h3>
+                <div class="good__desc-text active">
+                    <p>Рюкзак школьный T-23 "Pacific"<br>
+                        Стильная вещь - это, прежде всего, качественная вещь. Рюкзак, в котором необходимое количество карманов и основных отделений, не рвется подкладка, продумана эргономика внутреннего пространства. Именно такой - рюкзак Yes. Сдержанный, но стильный дизайн удачно дополняет первоклассный конструктив рюкзака. Кроме основных отделений на боковых панелях два кармашка для бутылки с водой и других мелочей. Yes - это удачный выбор на каждый день. Выбирайте качественный рюкзак. Дополнительно: USB port. Материал: полиэстер.
+                    </p>
+                    <div class="good__desc-opt">
+                        <div class="good__desc-left">
+                            <span><b>Вес </b> <i></i></span>
+                            <span><b>Водонепроницаемость/водоотталкиваемость </b> <i></i></span>
+                            <span><b>Высота </b> <i></i></span>
+                            <span><b>Глубина </b> <i></i></span>
+                            <span><b>Дополнительные преимущества </b> <i></i></span>
+                            <span><b>Количество отделений </b> <i></i></span>
+                        </div>
+                        <div class="good__desc-right">
+                            <span>135 грм.</span>
+                            <span>Водоотталкиваемость</span>
+                            <span>46,5см</span>
+                            <span>5см</span>
+                            <span>регулируемые лямки, карман на молнии</span>
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="category__sidebar-title">список интернет магазинов</h3>
+                <div class="good__desc-text">
+                    <div class="good__desc-row first">
+                        <div class="good__desc-img">
+                            <span>Магазины</span>
+                        </div>
+                        <div class="good__desc-info">
+                            <span>Информация</span>
+                        </div>
+                        <div class="good__desc-conditions">
+                            <span>Условия продажи</span>
+                        </div>
+                    </div>
+                    <div class="good__desc-row">
+                        <div class="good__desc-img">
+                            <img src="src/img/selected/image%2012@3x.png" alt="">
+                        </div>
+                        <div class="good__desc-info">
+                            <span>
+                                <a href="http://op24.com.ua">op24.com.ua</a><br>
+                                О магазине
+                            </span>
+                        </div>
+                        <div class="good__desc-conditions">
+                            <span>Доставка: из Днепропетровска в Киев <br> рюкзак школьный Т-23 Pacific</span>
+                        </div>
+                        <div class="good__desc-button">
+                            <a href="http://op24.com.ua">В магазин</a>
+                        </div>
+                    </div>
+                    <div class="good__desc-row">
+                        <div class="good__desc-img">
+                            <img src="src/img/selected/image%2014.1@3x.png" alt="">
+                        </div>
+                        <div class="good__desc-info">
+                            <span>
+                                <a href="http://mamazin.com">mamazin.com</a><br>
+                                О магазине
+                            </span>
+                        </div>
+                        <div class="good__desc-conditions">
+                            <span>Доставка: из Днепропетровска в Киев <br> рюкзак школьный Т-23 Pacific</span>
+                        </div>
+                        <div class="good__desc-button">
+                            <a href="http://mamazin.com">В магазин</a>
+                        </div>
+                    </div>
+                    <div class="good__desc-row">
+                        <div class="good__desc-img">
+                            <img src="src/img/selected/image%2017@3x.png" alt="">
+                        </div>
+                        <div class="good__desc-info">
+                            <span>
+                                <a href="http://akvarel.com">akvarel.com</a><br>
+                                О магазине
+                            </span>
+                        </div>
+                        <div class="good__desc-conditions">
+                            <span>Доставка: из Днепропетровска в Киев <br> рюкзак школьный Т-23 Pacific</span>
+                        </div>
+                        <div class="good__desc-button">
+                            <a href="http://akvarel.com">В магазин</a>
+                        </div>
+                    </div>
+                    <div class="good__desc-row">
+                        <div class="good__desc-img">
+                            <img src="src/img/selected/image%2019.1@3x.png" alt="">
+                        </div>
+                        <div class="good__desc-info">
+                            <span>
+                                <a href="http://romus.com">romus.com</a><br>
+                                О магазине
+                            </span>
+                        </div>
+                        <div class="good__desc-conditions">
+                            <span>Доставка: из Днепропетровска в Киев <br> рюкзак школьный Т-23 Pacific</span>
+                        </div>
+                        <div class="good__desc-button">
+                            <a href="http://romus.com">В магазин</a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="category__sidebar-title">список офлайн магазинов</h3>
+                <div class="good__desc-text">
+                    <div class="good__desc-text-wrap">
+                        <div class="good__desc-filial">
+                            <div class="good__desc-filial-head">
+                                <form action="">
+                                    <div>
+                                        <label for="good-obl">Выберите Область</label>
+                                        <select name="" id="good-obl">
+                                            <option value="">Киевская</option>
+                                            <option value="">Киевская</option>
+                                            <option value="">Киевская</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="good-city">Выберите город</label>
+                                        <select name="" id="good-city">
+                                            <option value="">Киев</option>
+                                            <option value="">Киев</option>
+                                            <option value="">Киев</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="good__desc-filial-body">
+                                <div class="good__desc-filial-row">
+                                    <span><b>магазин формат</b><br>Киев, ул. Первого Мая, 70</span>
+                                    <a href="tel:+380970901619">+380970901619</a>
+                                </div>
+                                <div class="good__desc-filial-row">
+                                    <span><b>магазин формат</b><br>Киев, ул. Первого Мая, 70</span>
+                                    <a href="tel:+380970901619">+380970901619</a>
+                                </div>
+                                <div class="good__desc-filial-row">
+                                    <span><b>магазин формат</b><br>Киев, ул. Первого Мая, 70</span>
+                                    <a href="tel:+380970901619">+380970901619</a>
+                                </div>
+                                <div class="good__desc-filial-row">
+                                    <span><b>магазин формат</b><br>Киев, ул. Первого Мая, 70</span>
+                                    <a href="tel:+380970901619">+380970901619</a>
+                                </div>
+                                <div class="good__desc-filial-row">
+                                    <span><b>магазин формат</b><br>Киев, ул. Первого Мая, 70</span>
+                                    <a href="tel:+380970901619">+380970901619</a>
+                                </div>
+                                <div class="good__desc-filial-row">
+                                    <span><b>магазин формат</b><br>Киев, ул. Первого Мая, 70</span>
+                                    <a href="tel:+380970901619">+380970901619</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__desc-map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5c4c4b394710c488f41155923b323ceadb6bfbf2cd3d811d987cb71b84fe7dcb&amp;width=100%25&amp;height=610&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="category__sidebar-title">отзывы о товаре</h3>
+                <div class="good__desc-text">
+                    <div class="good__desc-text-wrap">
+                        <div class="good__desc-reviews">
+                            <div class="good__desc-review-row">
+                                <div class="good__desc-review-head">
+                                    <span class="good__desc-review-title">Андрей Андреев</span>
+                                    <div class="good__desc-review-stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="good__desc-review-date">13 Июня 2019</span>
+                                </div>
+                                <span class="good__desc-review-body">
+                                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах
+                                </span>
+                            </div>
+                            <div class="good__desc-review-row">
+                                <div class="good__desc-review-head">
+                                    <span class="good__desc-review-title">Андрей Андреев</span>
+                                    <div class="good__desc-review-stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="good__desc-review-date">13 Июня 2019</span>
+                                </div>
+                                <span class="good__desc-review-body">
+                                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах
+                                </span>
+                            </div>
+                            <div class="good__desc-review-row">
+                                <div class="good__desc-review-head">
+                                    <span class="good__desc-review-title">Андрей Андреев</span>
+                                    <div class="good__desc-review-stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="good__desc-review-date">13 Июня 2019</span>
+                                </div>
+                                <span class="good__desc-review-body">
+                                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах
+                                </span>
+                            </div>
+                            <button class="good__desc-review-button">ПОКАЗАТЬ ЕЩЕ</button>
+                        </div>
+                        <div class="good__desc-review">
+                            <h3 class="good__desc-u-title">ОСТАВИТЬ ОТЗЫВ</h3>
+                            <div class="good__desc-u-stars">
+                                Ваша оценка
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <form action="">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" placeholder="Введите ваше имя">
+                                <label for="text">Отзыв</label>
+                                <textarea id="text" cols="30" rows="10" placeholder="Введите текст Вашего отзыва"></textarea>
+                                <button type="submit">ОСТАВИТЬ ОТЗЫВ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="good__dop">
+        <div class="collections-slider">
+            <div class="collections-slider__head">
+                <div class="collections-slider__title">
+                    <h2 class="collections-slider__title-text">С этим покупают</h2>
+                </div>
+                <div class="collections-slider__nav">
+                    <div class="collections-slider__nav-wrap">
+                        <div class="collections-slider__nav-slider" id="collections-slider__nav-slider-first">
+                            <span class="collections-slider__nav-number" data-progress="1">1</span>
+                            <span class="collections-slider__nav-number" data-progress="2">2</span>
+                            <span class="collections-slider__nav-number" data-progress="3">3</span>
+                            <span class="collections-slider__nav-number" data-progress="4">4</span>
+                            <span class="collections-slider__nav-number" data-progress="5">5</span>
+                            <span class="collections-slider__nav-number" data-progress="6">6</span>
+                            <span class="collections-slider__nav-number" data-progress="7">7</span>
+                            <span class="collections-slider__nav-number" data-progress="8">8</span>
+                            <span class="collections-slider__nav-number" data-progress="9">9</span>
+                        </div>
+                        <span>/ 9</span>
+                    </div>
+                    <div class="collections-slider__nav-progress">
+                        <div class="collections-slider__nav-complete"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="collections-slider__slider-first" class="collections-slider__slider">
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1201</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1202</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1203</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1204</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1205</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1206</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1207</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1208</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+                <div class="collections-slider__slide">
+                    <img class="collections-slider__slide-img" src="src/img/selected/557091-2.jpg" alt="">
+                    <span class="collections-slider__slide-article">Артикул: 38276482</span>
+                    <span class="collections-slider__slide-desc">
+                    Рюкзак молодежный ST-32 Space Legend
+                </span>
+                    <span class="collections-slider__slide-price"><b>1209</b> грн</span>
+                    <div class="collections-slider__slide-links">
+                        <a href="" class="collections-slider__slide-link">где купить?</a>
+                        <a href="" class="collections-slider__slide-link">подробнее</a>
+                    </div>
+                    <span class="collections-slider__slide-tab">Новинка</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__banner">
+        <div class="footer__wrap between">
+            <h3 class="banner__title">Где купить?</h3>
+            <div class="banner__desc">
+                <i class="splash"></i>
+                <span class="banner__text">
+                    Товары бренда YES можно купить в любом регионе Украины!
+                </span>
+                <i class="splash"></i>
+            </div>
+            <a href="#" class="banner__button">смотреть магазины</a>
+        </div>
+    </div>
+    <div class="footer__wrap">
+        <div class="footer__top">
+            <div class="footer__copyright">
+                <a href="#"><img src="src/img/logo/logo.svg" alt=""></a>
+                <span>© 2019 «YES». <br> Все права защищены.</span>
+            </div>
+            <div class="footer__info">
+                <span>По вопросам сотрудничества пишите на почту: <a href="mailto:info@yes-tm.com">info@yes-tm.com</a></span>
+            </div>
+            <div class="footer__soc">
+                <a href="#" class="footer__soc-button"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer__soc-button"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="footer__soc-button"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__soc-button"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+        <div class="footer__hr"></div>
+        <div class="footer__bot">
+            <div class="footer__nav">
+                <a href="catalog.html" class="footer__point">каталог товаров</a>
+                <a href="#" class="footer__point">о бренде</a>
+                <a href="collections.html" class="footer__point">наши колЛекции</a>
+                <a href="#" class="footer__point">Блог</a>
+                <a href="#" class="footer__point">где купить</a>
+                <a href="#" class="footer__point">контакты</a>
+            </div>
+            <form action="" class="footer__subscribe">
+                <label class="footer__label" for="footer__input">Будьте в курсе последних новостей</label>
+                <input type="text" id="footer__input" class="footer__input" placeholder="Введите ваш Email">
+                <button type="submit" class="footer__button">ПОДПИСАТЬСЯ</button>
+            </form>
+        </div>
+    </div>
+</footer>
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/app/slick/slick.min.js"></script>
+<script src="src/js/scripts.js"></script>
+<script src="src/js/sliders.js"></script>
+</body>
+</html>

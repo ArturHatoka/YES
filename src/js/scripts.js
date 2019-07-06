@@ -210,5 +210,44 @@ $(document).ready(function () {
             $(".category__back").removeClass("active")
         }
     );
+    //Отображение изображений в карточке товара
+    $(".document").ready(
+        function () {
+            var img = $(".good__img-small").children("img:first-child").attr("src");
+            $(".good__img-big img").attr("src", img);
+        }
+    );
+    $(".good__img-small img").click(
+        function () {
+            var src = $(this).attr("src");
+            $(".good__img-big img").attr("src", src);
+        }
+    );
+    $(".good__img-small div").click(
+        function () {
+            $(this).parent().children().removeClass("active");
+            $(this).addClass("active");
+        }
+    );
 
+    $(".good__option-desc button").click(
+        function () {
+            $(this).parent().find(".hidden").removeClass("hidden");
+            $(this).addClass("hidden");
+        }
+    );
+    $(".good__option-compare button").click(
+        function() {
+            $(this).parent("div").toggleClass("active");
+        }
+    );
+
+    $(".good__desc-head button").click(
+        function () {
+            $(this).parent("div").children("button").removeClass("active");
+            $(this).addClass("active");
+            var ind = $(this).index();
+            $(".good__desc-text").removeClass("active").eq(ind).addClass("active");
+        }
+    );
 });
