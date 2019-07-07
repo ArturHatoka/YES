@@ -250,4 +250,26 @@ $(document).ready(function () {
             $(".good__desc-text").removeClass("active").eq(ind).addClass("active");
         }
     );
+
+    //Открытие вопроса
+    $(".good__option-button").click(
+        function () {
+            $(".overlay").stop(false, false).fadeIn(400).css("display", "block").addClass("active");
+            $(".modal").stop(false, false).fadeIn(400).css("display", "block").addClass("active");
+        }
+    );
+    $(".overlay").click(
+        function () {
+            $(this).stop(false, false).fadeOut(500).removeClass("active");
+            $(".modal").stop(false, false).fadeOut(500).removeClass("active");
+
+        }
+    );
+    $(".modal__close").click(
+        function () {
+            $(".overlay").stop(false, false).fadeOut(500).removeClass("active");
+            $(".modal").stop(false, false).fadeOut(500).removeClass("active");
+
+        }
+    );
 });

@@ -1257,6 +1257,23 @@
   .page.good .category__sidebar-title{
     display: inline-block;
   }
+
+  .contacts__box {
+    width: 75%;
+  }
+  .contacts__title{
+    font-size: 24px;
+  }
+  .contacts__small{
+    width: 100%;
+  }
+  .page .collections__head.contacts__head{
+    height: 150px;
+  }
+  .contacts__map{
+    transform: translateY(-150px);
+    margin-bottom: -150px;
+  }
 }
 @media screen and (max-width: 375px){
   .collections-slider__nav-wrap {
