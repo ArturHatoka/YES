@@ -1,14 +1,11 @@
-
 section.blog {
     width: 100%;
     max-width: 100vw;
 }
 
-
 .page-blog .collections__head {
     background-image: url('../img/image catalogue/bigbg.svg');
 }
-
 
 .blog__body {
     position: static;
@@ -405,5 +402,315 @@ section.blog {
     }
     .page-post{
         margin-top: 80px !important;
+    }
+}
+.stores .collections__head {
+    background-image: url('../img/image catalogue/stores.svg');
+}
+
+.store__buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 7px 10px 0 rgba(34, 31, 62, 0.05);
+    position: relative;
+}
+
+.store__buttons-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 1px;
+    background-color: #000000;
+    opacity: .15;
+}
+
+.store__button {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 45px 0;
+    opacity: 0.6;
+    font-family: Gotham-Pro;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.42px;
+    color: #272727;
+    text-decoration: none;
+    transition: .3s ease;
+    text-transform: uppercase;
+}
+
+.active-button {
+    color: #ff8400;
+    opacity: 1;
+}
+
+.store__body {
+    width: 1600px;
+    max-width: 95%;
+    padding: 120px 0 0;
+}
+
+.store__popular {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.store__popular-link {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #333333;
+    text-decoration: none;
+    position: relative;
+}
+
+.store__popular-heading {
+
+    font-family: Gotham-Pro;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: 1.44px;
+    color: #f2f2f2;
+    text-decoration: none;
+    z-index: 2;
+
+}
+
+.store__popular-link::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.9;
+    background-color: #1d140c;
+    content: "";
+}
+
+.store__popular-trigger {
+
+    font-family: Gotham-Pro;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    color: #f2f2f2;
+    text-decoration: none;
+    z-index: 2;
+
+}
+
+.fa-long-arrow-alt-right {
+    color: #ff8400;
+    font-size: 35px;
+    position: relative;
+    top: 7px;
+    left: 20px;
+}
+
+.overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 501;
+    opacity: 0.7;
+    display: none;
+    background-color: #000000;
+}
+.overlay.active{
+    display: block;
+}
+.modal{
+    background-color: #fff;
+    padding:60px 90px;
+    max-width: 650px;
+    width: 70%;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 502;
+    display: none;
+    overflow-y: auto;
+}
+.modal.active{
+    display: block;
+}
+.modal__heading{
+    text-align: center;
+    font-family: Gotham-Pro;
+    font-size: 36px !important;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: 1.44px;
+    color: #272727;
+    text-transform: uppercase;
+
+}
+
+.modal__label input, .modal__label textarea{
+    width: 100%;
+    height: 46px;
+    border: solid 1px #e0e0e0;
+    background-color: #f6f6f6;
+    outline: none;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+.modal__label textarea{
+    height: 114px;
+    padding-top:10px;
+}
+.modal__label p{
+    margin-bottom: 7px;
+    font-family: Proxima-Nova;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    color: #333333;
+}
+.modal__text{
+    font-family: Proxima-Nova;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    color: #272727;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+.modal__button{
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ff8400;
+
+    font-family: Proxima-Nova;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    text-transform: uppercase;
+}
+.modal__close{
+    position: absolute;
+    top:25px;
+    right: 25px;
+
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    background-image: url('../img/image catalogue/close.svg');
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+    background-color: transparent;
+}
+.store__popular-trigger{
+    height: 0px;
+    opacity: 0;
+    transition: .3s ease;
+}
+.store__popular-link:hover .store__popular-trigger{
+    height: 60px;
+    opacity: 1;
+}
+
+@media screen and (max-width:550px){
+    .stores .good__desc-filial-row span b{
+        font-size: 17px
+    }
+    .stores .good__desc-filial-row a{
+        font-size: 16px;
+    }
+    .store__buttons-container{
+        flex-wrap: wrap;
+
+    }
+    .store__buttons-container::after{
+        display: none;
+    }
+    .store__button{
+        width: 100%;
+        padding: 25px 0;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:768px){
+    .stores .good__desc-filial-body{
+        display: block;
+    }
+
+}
+@media screen and (max-width:800px){
+    .store__popular-link{
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+        min-height: 160px;
+    }
+    .store__popular{
+        flex-wrap: wrap;
+        height: auto  ;
+    }
+    .store__popular-heading{
+        font-size: 18px;
+    }
+    .modal{
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        left: 0;
+        transform: none;
+        overflow-y: auto;
+        padding: 20px;
+    }
+    .stores .good__desc-text-wrap{
+        flex-wrap: wrap;
+    }
+    .stores .good__desc-filial{
+        width: 100%;
+    }
+    .stores .good__desc-map{
+        width: 100%;
     }
 }

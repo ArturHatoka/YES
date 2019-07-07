@@ -175,7 +175,7 @@ $(document).ready(function () {
     //Выбор чекбокса
     $("[class $= pop-up], input").click(
       function () {
-          console.log($(this).parents("[class *= pop-up]").find("input").prop("checked",false));
+          $(this).parents("[class *= pop-up]").find("input").prop("checked",false);
           $(this).prop("checked",true);
       }
     );

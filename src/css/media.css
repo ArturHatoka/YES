@@ -46,8 +46,15 @@
     margin-top: 0; }
 
   .good__desc-wrap {
-    align-items: stretch; } }
+    align-items: stretch; }
+
+  .collect__wrap {
+    justify-content: space-around; } }
 @media screen and (max-width: 1300px) {
+  .page .collections__head.collect__head {
+    height: auto;
+    min-height: 520px; }
+
   .header__navigation, .header__navigation button {
     font-size: 12px; }
 
@@ -102,8 +109,35 @@
     max-height: 450px; }
 
   .good__img-small div img {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .compare__itm img {
+    max-height: 250px; }
+
+  .compare__review {
+    flex-wrap: wrap; }
+
+  .compare__review a {
+    width: 100%;
+    margin: 10px 0 0 0; }
+
+  .good__option-color__pop-up label {
+    width: 30px;
+    height: 30px; }
+
+  .good__option-color__pop-up input:checked + label:after {
+    width: 30px;
+    height: 30px; }
+
+  .page .category__item {
+    height: 485px; }
+
+  .page .category__item.active {
+    height: 485px; } }
 @media screen and (max-width: 1024px) {
+  .compare__itm img {
+    max-height: 200px; }
+
   .page .category__item-img {
     max-height: 225px; }
 
@@ -259,8 +293,47 @@
     flex-wrap: wrap; }
 
   .good__desc-text-wrap {
-    max-height: none; } }
+    max-height: none; }
+
+  .compare__share {
+    display: none; }
+
+  .compare__row span {
+    margin-right: 5px; }
+
+  .compare__itm-first img {
+    max-width: 100%; }
+
+  .compare__col {
+    min-width: 250px; }
+
+  .compare__first {
+    min-width: 115px; }
+
+  .compare__row-first span {
+    font-size: 16px; }
+
+  .compare__delete {
+    transform: translateY(0); }
+
+  .compare__box {
+    overflow-x: scroll; } }
 @media screen and (max-width: 768px) {
+  .page__title-box {
+    flex-direction: column; }
+
+  .compare__row-first {
+    padding-left: 10px; }
+
+  .footer .banner__desc {
+    justify-content: center; }
+
+  .compare__itm {
+    padding: 0 5px; }
+
+  .compare__itm img {
+    transform: translateX(0); }
+
   .good__desc-head button {
     font-size: 12px; }
 
@@ -406,6 +479,12 @@
   .about_us__plane-img {
     z-index: 300; }
 
+  .page.collections .page__backtitle {
+    font-size: 110px; }
+
+  .page .collections__head.collect__head {
+    max-height: 300px; }
+
   .about_us__img-block {
     width: 100%;
     justify-content: flex-start; }
@@ -429,7 +508,7 @@
   .page .catalog__box {
     width: 90%; }
   .page .collections__head {
-    background-image: none;
+    background-image: none !important;
     height: 300px; }
   .page__title {
     max-width: 100% !important; }
@@ -519,7 +598,10 @@
     .footer__copyright span {
       text-align: center;
       margin-top: 15px;
-      margin-bottom: 25px; } }
+      margin-bottom: 25px; }
+
+  .collect__wrap {
+    margin: 50px 0; } }
 @media screen and (max-width: 425px) {
   .header__catalog {
     display: none; }

@@ -491,31 +491,31 @@
               transition: width .2s, height .2s;
             }
 
-            &#cl1 {
+            &#cl1, &.bla {
               & + label:after {
                 background: #333333;
               }
             }
 
-            &#cl2 {
+            &#cl2, &.blu {
               & + label:after {
                 background: #545f98;
               }
             }
 
-            &#cl3 {
+            &#cl3, &.yel {
               & + label:after {
                 background: #f3df24;
               }
             }
 
-            &#cl4 {
+            &#cl4, &.gre {
               & + label:after {
                 background: #4cbb25;
               }
             }
 
-            &#cl5 {
+            &#cl5, &.red {
               & + label:after {
                 background: #f25837;
               }
